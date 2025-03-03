@@ -1,0 +1,162 @@
+/* Outer Wrapper */
+.code-editor-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 80rem; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Circuit Decorations */
+.circuit-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+.circuit-decorations svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Fade In Animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Code Editor Container */
+.code-editor-container {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Title Bar */
+.title-bar {
+  background-color: #000;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+}
+
+.title-text {
+  color: #a3f0b0;
+  font-family: monospace;
+  font-size: 1.125rem;
+}
+
+/* Editor Layout */
+.editor-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 300px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #141414;
+  border-right: 1px solid #333;
+  padding: 1rem;
+}
+
+.explorer-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #1a1a1a;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.explorer-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #a3f0b0;
+}
+
+.explorer-text {
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.file-item {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.file-item.active {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+/* Main Editor */
+.main-editor {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+}
+
+.editor-content {
+  display: flex;
+}
+
+.line-numbers {
+  padding-right: 1rem;
+  color: #4b5563;
+  user-select: none;
+  line-height: 1.5rem;
+}
+
+.line-number {
+  line-height: 1.5rem;
+}
+
+.code-content {
+  color: #d1d5db;
+  white-space: pre;
+}
+
+/* Syntax Highlighting */
+.code-content .string {
+  color: #e6c07b;
+}
+
+.code-content .tag {
+  color: #a3f0b0;
+}
+
+/* Properties Panel */
+.properties-panel {
+  background-color: #141414;
+  border-left: 1px solid #333;
+  padding: 1rem;
+}
+
+.android-props {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  white-space: pre-wrap;
+}

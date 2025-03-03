@@ -1,0 +1,193 @@
+/* About Section */
+.about-section {
+  background-color: black;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Intro Section */
+.intro-section {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.intro-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tag {
+  display: inline-block;
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #333;
+  color: #a3f0b0;
+  font-family: monospace;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.intro-text {
+  color: #bbb;
+  font-size: 1.125rem;
+  max-width: 48rem;
+}
+
+/* Experience Grid */
+.experience-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+/* Experience Item */
+.experience-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.experience-item.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon-box {
+  background-color: #1a1a1a;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #a3f0b0;
+}
+
+/* Experience Content */
+.experience-content {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #a3f0b0;
+  font-family: monospace;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #bbb;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #ccc;
+}
+
+.award-item {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.1s ease-out 0s;
+  margin-bottom: 24px;
+}
+.award-item:hover {
+  border-color: #a3f0b0;
+}
+
+.award-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.award-icon {
+  width: 75px;
+  height: 75px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.award-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.2em;
+}
+
+.year {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #bbb;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.25rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+}

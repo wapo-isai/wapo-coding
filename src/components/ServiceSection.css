@@ -1,0 +1,123 @@
+/* Services Section */
+.services-section {
+  background-color: black;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.services-content {
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Intro Section */
+.intro-section {
+  margin-bottom: 4rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.intro-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tag {
+  display: inline-block;
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #333;
+  color: #a3f0b0;
+  font-family: monospace;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  color: #bbb;
+  font-size: 1.125rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Service Card */
+.service-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: border-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out,
+    border-color 0.3s ease;
+}
+
+.service-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  border-color: #a3f0b0;
+}
+
+.icon-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #a3f0b0;
+}
+
+/* Service Card Content */
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  color: #ccc;
+  font-size: 1rem;
+}
