@@ -34,6 +34,7 @@
 .highlight {
   color: #a3f0b0;
   font-family: monospace;
+  word-wrap: break-word;
 }
 
 /* Button Styles */

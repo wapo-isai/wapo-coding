@@ -5,3 +5,9 @@
 .nav-link:hover {
   color: #a3f0b0;
 }
+
+@media (max-width: 768px) {
+  .nav-link {
+    transition: all 0.3s ease-in-out;
+  }
+}
