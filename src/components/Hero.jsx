@@ -33,12 +33,12 @@ function Hero() {
           </p>
 
           <div className="demo-btn-wrapper">
-            <button className="demo-btn">
-              <Link to="projects" smooth={true} duration={1000}>
+            <Link to="projects" smooth={true} duration={1000}>
+              <button className="demo-btn">
                 Checkout my work
-              </Link>
-              <ArrowRight className="icon" />
-            </button>
+                <ArrowRight className="icon" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
